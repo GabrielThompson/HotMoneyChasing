@@ -1,0 +1,32 @@
+{
+  "data": {
+    "provider": "mock",
+    "refresh_interval_seconds": 60,
+    "news_symbols_per_run": 30,
+    "database_path": "data/hot_money.db",
+    "tushare_token_env": "TUSHARE_TOKEN"
+  },
+  "rules": {
+    "price_breakout_pct": 3.0,
+    "volume_ratio": 1.8,
+    "min_turnover_amount": 30000000,
+    "fund_spike_amount": 50000000,
+    "fund_spike_pct": 8.0,
+    "continuous_inflow_window": 3,
+    "continuous_inflow_min_total": 80000000,
+    "hot_sector_top_n": 10,
+    "hot_sector_min_inflow": 100000000,
+    "max_signals_per_run": 80
+  },
+  "openclaw": {
+    "enabled": true,
+    "command": "openclaw",
+    "timeout_seconds": 45,
+    "local": true,
+    "agent": "",
+    "session_id": "",
+    "to": "",
+    "thinking": "",
+    "extra_args": []
+  }
+}
